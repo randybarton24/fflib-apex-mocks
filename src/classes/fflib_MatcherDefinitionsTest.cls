@@ -48,6 +48,7 @@ public class fflib_MatcherDefinitionsTest
 		
 		SObject accountRecord = ACCOUNT_OBJECT_TYPE.newSObject();
 		accountRecord.put('Name', 'MatcherDefinitionTestAccount' + System.now());
+		accountRecord.put('Industry', 'Dental');
 
 		insert accountRecord;
 		Id accountId = accountRecord.Id;
